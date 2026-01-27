@@ -1,8 +1,7 @@
 "use client";
 import gsap from "gsap";
 import {useGSAP} from '@gsap/react';
-import { ScrollTrigger } from "gsap/all";
-import ScrollTriggerDemo from "./scrollTrigger";
+import HorizontalScrollTrigger from './HorizontalScrollTrigger'
 
 export default function Home() {
   const timeline = gsap.timeline()
@@ -66,7 +65,7 @@ export default function Home() {
      <div className="staggerBox"></div>
 <div style={{ height:'500px', width:'100px', background:'blue'}}>Hello</div>
 <h1>Scroll Trigger demo</h1>
-<ScrollTriggerDemo />
+{/* <ScrollTriggerDemo /> */}
 <hr/>
 <hr/>
 <hr/>
@@ -81,6 +80,8 @@ export default function Home() {
 <h1>Scroll Trigger demo</h1>
 <h1>Scroll Trigger demo</h1>
 <h1>Scroll Trigger demo</h1>
+
+<HorizontalScrollTrigger />
 
     </div>
   );

@@ -53,3 +53,90 @@ body {
   height: 100vh;
   width: 100vw;
 }
+
+.wrapper{
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.list{
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  position: relative;
+  padding: 2rem;
+}
+
+.item {
+  min-width: 100vw;
+  height: 100%;
+  padding: 40px;
+  font-size: 1.2rem;
+  background: #111;
+  color: white;
+  border-right: 1px solid #333;
+}
+
+.item.one {
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+}
+
+.item.one::after {
+  content: '✈️';
+  position: absolute;
+  font-size: 15rem;
+  opacity: 0.1;
+  right: -5rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(-15deg);
+  z-index: 1;
+}
+
+.item.two {
+  
+  color: #fff;
+  font-family: 'Crimson Text', serif;
+}
+
+.item.two::after {
+  content: '🌴';
+  position: absolute;
+  font-size: 15rem;
+  opacity: 0.1;
+  left: -5rem;
+  bottom: -3rem;
+  z-index: 1;
+}
+
+.item.three {
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+}
+
+.item.three::after {
+  content: '🏖️';
+  position: absolute;
+  font-size: 15rem;
+  opacity: 0.1;
+  right: -3rem;
+  bottom: -3rem;
+  z-index: 1;
+}
+
+.item.four {
+  color: #fff;
+  font-family: 'Crimson Text', serif;
+}
+
+.item.four::after {
+  content: '🗺️';
+  position: absolute;
+  font-size: 15rem;
+  opacity: 0.1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}

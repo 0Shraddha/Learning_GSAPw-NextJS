@@ -18,3 +18,7 @@ timeline.to(‘.box1’,{}).to(‘box2’,{});
 gsap.stagger - lets you animate multiple components with a delay
 
 gsap.scrollTrigger - lets you animate when we scroll
+    1. pinning
+    2. snapping
+
+gsap -> MotionPathPlugin lets you animate elements along any curve or svg path instead of straight line
