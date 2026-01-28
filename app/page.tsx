@@ -49,10 +49,51 @@ export default function Home() {
       }
     })
 
+    //topbar
+    gsap.from('.links', {
+      duration: 1,
+      y: '-100%',
+      ease: 'elastic'
+    })
+    gsap.from('.link', {
+      duration: 1,
+      opacity: 0,
+      delay: 1,
+      stagger: 0.1
+    })
+    gsap.from('.left',{
+      x: '-50%',
+      duration: 1,
+      opacity: 0,
+      delay: 0.5
+    })
+    gsap.from('.right',{
+      x: '50%',
+      duration: 1,
+      opacity: 0,
+      delay: 1
+    })
+    gsap.from('.footer', {
+      duration: 1,
+      y: '-100%',
+      ease: 'bounce'
+    })
+
   },[])
   
   return (
     <div className="">
+
+<ul className="links" style={{ display: 'flex', justifyContent: 'space-between', background: 'red', height: '10vh'}}>
+  <li className="link">Link1</li>
+  <li className="link">Link1</li>
+  <li className="link">Link1</li>
+</ul>
+
+<div className="container" style={{ display: 'flex'}}>
+  <div className="left" style={{height: '50vh', width: '50vw',background: 'green'}}>Left Container</div>
+  <div className="right" style={{height: '50vh', width: '50vw',background: 'green'}}>Right Container</div>
+</div>
       <h1>gsap.fromTo</h1>
      <div className="box1"></div>
      <h1>gsap.timeline</h1>
@@ -83,6 +124,7 @@ export default function Home() {
 
 <HorizontalScrollTrigger />
 
+<div className="footer" style={{ background: 'pink', height: '10vh'}}>Footer</div>
     </div>
   );
 }
